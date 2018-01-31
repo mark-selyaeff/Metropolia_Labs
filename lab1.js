@@ -87,7 +87,7 @@ function ajaxSuccess(response) {
 
 const button = document.getElementById('fetching');
 button.addEventListener('click', () => { $.ajax({
-    url: "http://api.geonames.org/findNearbyWikipediaJSON",
+    url: "https://secure.geonames.org/findNearbyWikipediaJSON",
     dataType: "json", 
     data: {"lat": googleMap.getCenter().lat(),
     "lng": googleMap.getCenter().lng(), "username": "marksel"},
