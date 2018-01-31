@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title of the document</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&key=AIzaSyDwIvi_9Jf10T9RT9ctcBHLC8dsnz3oKC4" defer></script>
+        <script type="text/javascript" src="lab1.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    
+<body>
+    <h2>My First Map</h2>
+    <h4>How it works:</h4>
+    <p id="description">There are 2 new buttons below: "Fetch markers" and "Clean markers". Pushing "Fetch markers" button you'll get 5 markers based on the position of current Google Map view. If you move the map to another position and press "Fetch markers" button again initial markers will be deleted and new 5 will appear. <br>After clicking on the marker the InfoWindow will pop up.</p>
+    <p>It's also possible to just push "Clean markers" button and delete them manually.</p>
+    <button id="fetching">Fetch markers</button>
+    <button id="clean">Clean markers</button>
+    <form id="searchForm">
+        Search:<br>
+        <input type="text" id="searchField" name="searchField">
+        <input type="submit">
+    </form>
+    <div id="mapDiv"></div>
+    
+</body>
+</html>
