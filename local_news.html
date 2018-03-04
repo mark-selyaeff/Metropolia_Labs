@@ -11,6 +11,10 @@
 	<div id="warning"></div>
 	<ul id="news">
 	</ul>
+	<div style="margin: 100px auto; border: 1px solid red; width: 500px; padding: 15px;">
+		<h3 style="text-align: center;">How it works:</h3>
+		The app use <a href="https://www.w3.org/TR/geolocation-API/">Geolocation API</a> built into Javascript. When user click button, the app gets coordinates of your location and sends to Google Geocode API to figure out in what country you are. Then it uses <a href="https://newsapi.org/">NewsAPI</a> to get news for the specific countries. Unfortunately, Finland is not supported there, so by default Swedish news will pop up. 
+	</div>
 </body>
 <script src="geo-api.js"></script>
 </html>
